@@ -1,5 +1,5 @@
 {% set name = "wagtail-treemodeladmin" %}
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 231496185d419181df059e25bd0d7561b961b1d47283af4304f0d2eb8635b081
+  sha256: e68a874844f54fbd774285a1d8b205c375efc0e9b72c3193aa7b6c527f09d852
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - wagtail >=5.1,<5.3
+    - wagtail >=5.1
     - wagtail-modeladmin >=1.0
 
 test:
