@@ -1,5 +1,6 @@
 {% set name = "wagtail-treemodeladmin" %}
 {% set version = "1.11.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
